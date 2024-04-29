@@ -1,0 +1,365 @@
+
+
+body {
+    margin: 0;
+    background:  #3D3D3B;
+    font-family: sans-serif;
+    font-weight: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    background-image: url(logo_ojot.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    
+}
+
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    flex: 1 0 25%; /* Allows boxes to flex and wrap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box img {
+    width: 20%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.box h3 {
+    margin: 10px 0 5px;
+}
+
+.box p {
+    color: black;
+}
+
+
+
+/* Row styling */
+.row {
+    display: flex; /* Use flexbox layout for rows */
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 10px; /* Add margin between rows */
+}
+
+/* Column styling */
+.column {
+    flex: 10%; /* Flex grow, shrink, and width to fit 5 columns in a row */
+    padding: 5px; /* Add padding around each column */
+}
+
+ /* CSS styles for the header */
+ header {
+    background-color: black; /* Background color for the header */
+    padding: 15px; /* Padding to create some space around the content */
+}
+/* CSS styles for the image */
+img.header-logo {
+    width: 200px;
+    height: 200px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+}
+.floating-box {
+    width: 1000px; /* Set the width of the textbox */
+    padding: 200px; /* Add padding to create space around the content */
+    border: 1px solid #ffffff; /* Add a border for visual distinction */
+    float: right; /* Float the textbox to the left */
+    margin: 10px; /* Add margin to create space between textboxes */
+}
+
+.floating-box1 {
+        display: flex;
+        flex-wrap: wrap; /* Allows images to wrap to the next row */
+        justify-content: center; /* Optional: centers the images within the container */
+        gap: 2px; /* Optional: space between images */
+}
+
+.floating-box img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+
+.container {
+width: 90%; /* Adjust as needed */
+margin: 0 auto;
+overflow: hidden; /* Clearfix */
+}
+
+
+
+
+.content {
+  float: right;
+  width: 30%; /* Adjust as needed */
+  background-image: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textbox {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.table-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+table {
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add space between tables */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+img {
+    width: 10%,;
+    height: 5%;
+  }
+
+
+  
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+  }
+
+/* Container for each image */
+.image-container {
+    position: relative; /* This allows the overlay to be positioned relative to the image container */
+    width: 100%; /* The container should fill the column width */
+    height: auto; /* Maintain the aspect ratio of the images */
+}
+
+/* Image styling */
+.image {
+    width: 100%; /* Fill the width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Ensures the image behaves like a block element */
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute; /* Absolute positioning within the container */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Fill the width of the container */
+    height: 100%; /* Fill the height of the container */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    opacity: 0; /* Initially hide the overlay */
+    transition: opacity 0.3s ease-in-out; /* Transition effect for fade in/out */
+}
+
+/* Show the overlay on hover */
+.image-container:hover .overlay {
+    opacity: 1; /* Display the overlay when hovering */
+}
+
+
+
+
+/* Basic styling for the column bar */
+.column-bar {
+  background-color: #333;
+  color: white;
+  width: 100px; /* Adjust the width as needed */
+  height: 100vh; /* Adjust the height as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for the navigation links */
+.column-bar nav ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.column-bar nav ul li {
+  padding: 10px;
+}
+
+.column-bar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover effect for the navigation links */
+.column-bar nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Styling for the content */
+.content {
+  margin-left: 200px; /* Adjust according to the width of the column bar */
+  padding: 20px;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+}
+
+/* Main container styling */
+.wrapper {
+    text-align: center; /* Center the content */
+    margin: 0 auto; /* Center the wrapper */
+}
+
+/* Row styling */
+.row {
+    display: flex; /* Use flexbox layout for rows */
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 10px; /* Add space between rows */
+}
+
+/* Column styling */
+.column {
+    flex: 1 0 10%; /* Flex grow and shrink, and set width of 20% to fit 5 columns in a row */
+    padding: 5px; /* Add padding around each column */
+}
+
+/* Image styling */
+.column img {
+    width: 100%; /* Fill the width of the column */
+    height: auto; /* Maintain aspect ratio of the image */
+    object-fit: cover; /* Scale the image without stretching */
+}
+
+
+
+.text {
+background-color: #f4f4f4;
+padding: 20px;
+}
+
+.text h2 {
+margin-bottom: 10px;
+}
+
+.textboxes {
+margin-top: 20px;
+}
+
+.textboxes input {
+margin-bottom: 10px;
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.textboxes input:not(:last-child) {
+margin-bottom: 50px; /* Adjust spacing between textboxes */
+}
+
+
+
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block; 
+    margin: 10px;
+    padding-top: 10px;
+
+    position: relative;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px; 
+}
+
+nav a:hover {
+    color: #000;
+
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #3D3D3B;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+

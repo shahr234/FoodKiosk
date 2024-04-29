@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="managerstyles.css">
+</head>
+
+<body style="background-color:#939390">
+
+    <h1 style="text-align: center;">List of products:</h1>
+
+    <div class="table">
+        <table class="table">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Stock Level</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+                </td>
+                <td class = "Name">Chicken Biryani</td>
+                <td class="stock-level">1</td>
+                <td class="description">A flavorful rice dish with chicken and spices.</td>
+                <td>
+                    <button onclick="showEditForm(this)">Edit</button>
+                    <button onclick="handleFileUpload(this)">Upload</button>
+                    <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+                         <input type="text" name="newName" placeholder="New name">
+                        <input type="number" name="quantity" placeholder="New quantity">
+                        <input type="text" name="description" placeholder="New description">
+                        <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+                        <button type="submit">Save</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                  <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+              </td>
+              <td>Chicken Biryani</td>
+              <td class="stock-level">1</td>
+              <td class="description">A flavorful rice dish with chicken and spices.</td>
+              <td>
+                  <button onclick="showEditForm(this)">Edit</button>
+                  <button onclick="handleFileUpload(this)">Upload</button>
+                  <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+                      <input type="number" name="quantity" placeholder="New quantity">
+                      <input type="text" name="description" placeholder="New description">
+                      <input type="Name " name="Name" placeholder="New Name">
+                      <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+                      <button type="submit">Save</button>
+                  </form>
+              </td>
+          </tr>
+          <tr>
+            <td>
+                <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+            </td>
+            <td>Chicken Biryani</td>
+            <td class="stock-level">1</td>
+            <td class="description">A flavorful rice dish with chicken and spices.</td>
+            <td>
+                <button onclick="showEditForm(this)">Edit</button>
+                <button onclick="handleFileUpload(this)">Upload</button>
+                <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+                    <input type="number" name="quantity" placeholder="New quantity">
+                    <input type="text" name="description" placeholder="New description">
+                    <input type="Name " name="Name" placeholder="New Name">
+                    <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+                    <button type="submit">Save</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+          </td>
+          <td>Chicken Biryani</td>
+          <td class="stock-level">1</td>
+          <td class="description">A flavorful rice dish with chicken and spices.</td>
+          <td>
+              <button onclick="showEditForm(this)">Edit</button>
+              <button onclick="handleFileUpload(this)">Upload</button>
+              <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+                  <input type="number" name="quantity" placeholder="New quantity">
+                  <input type="text" name="description" placeholder="New description">
+                  <input type="Name " name="Name" placeholder="New Name">
+                  <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+                  <button type="submit">Save</button>
+              </form>
+          </td>
+      </tr>
+      <tr>
+        <td>
+            <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+        </td>
+        <td>Chicken Biryani</td>
+        <td class="stock-level">1</td>
+        <td class="description">A flavorful rice dish with chicken and spices.</td>
+        <td>
+            <button onclick="showEditForm(this)">Edit</button>
+            <button onclick="handleFileUpload(this)">Upload</button>
+            <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+                <input type="number" name="quantity" placeholder="New quantity">
+                <input type="Name " name="Name" placeholder="New Name">
+                <input type="text" name="description" placeholder="New description">
+                <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+                <button type="submit">Save</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+      <td>
+          <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+      </td>
+      <td>Chicken Biryani</td>
+      <td class="stock-level">1</td>
+      <td class="description">A flavorful rice dish with chicken and spices.</td>
+      <td>
+          <button onclick="showEditForm(this)">Edit</button>
+          <button onclick="handleFileUpload(this)">Upload</button>
+          <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+              <input type="number" name="quantity" placeholder="New quantity">
+              <input type="Name " name="Name" placeholder="New Name">
+              <input type="text" name="description" placeholder="New description">
+              <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+              <button type="submit">Save</button>
+          </form>
+      </td>
+  </tr>
+  <tr>
+    <td>
+        <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+    </td>
+    <td>Chicken Biryani</td>
+    <td class="stock-level">1</td>
+    <td class="description">A flavorful rice dish with chicken and spices.</td>
+    <td>
+        <button onclick="showEditForm(this)">Edit</button>
+        <button onclick="handleFileUpload(this)">Upload</button>
+        <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+            <input type="number" name="quantity" placeholder="New quantity">
+            <input type="Name " name="Name" placeholder="New Name">
+            <input type="text" name="description" placeholder="New description">
+            <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+            <button type="submit">Save</button>
+        </form>
+    </td>
+</tr>
+<tr>
+  <td>
+      <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+  </td>
+  <td>Chicken Biryani</td>
+  <td class="stock-level">1</td>
+  <td class="description">A flavorful rice dish with chicken and spices.</td>
+  <td>
+      <button onclick="showEditForm(this)">Edit</button>
+      <button onclick="handleFileUpload(this)">Upload</button>
+      <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+          <input type="number" name="quantity" placeholder="New quantity">
+          <input type="text" name="description" placeholder="New description">
+          <input type="Name " name="Name" placeholder="New Name">
+          <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+          <button type="submit">Save</button>
+      </form>
+  </td>
+</tr>
+<tr>
+  <td>
+      <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+  </td>
+  <td>Chicken Biryani</td>
+  <button class="edit-btn" onclick="showEditForm(this)">Edit</button>
+  <button>Delete</button>
+  <td></td>
+  <td class="stock-level">1</td>
+  <td class="description">A flavorful rice dish with chicken and spices.</td>
+  <td>
+      <button onclick="showEditForm(this)">Edit</button>
+      <button onclick="handleFileUpload(this)">Upload</button>
+      <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+          <input type="number" name="quantity" placeholder="New quantity">
+          <input type="text" name="description" placeholder="New description">
+          <input type="Name " name="Name" placeholder="New Name">
+          <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+          <button type="submit">Save</button>
+      </form>
+  </td>
+</tr>
+<tr>
+  <td>
+      <img src="chicken_biryani.jpg" alt="Chicken Biryani" width="100">
+  </td>
+  <td>Chicken Biryani</td>
+  <td class="stock-level">1</td>
+  <td class="description">A flavorful rice dish with chicken and spices.</td>
+  <td>
+      <button onclick="showEditForm(this)">Edit</button>
+      <button onclick="handleFileUpload(this)">Upload</button>
+      <form class="edit-form" style="display: none;" onsubmit="updateData(event, this)">
+          <input type="number" name="quantity" placeholder="New quantity">
+          <input type="text" name="description" placeholder="New description">
+          <input type="Name " name="Name" placeholder="New Name">
+          <input type="file" name="file" accept="image/*" onchange="handleImageUpload(event)">
+          <button type="submit">Save</button>
+      </form>
+  </td>
+</tr>
+
+           
+        </table>
+    </div>
+
+    <div class="sidenav">
+        <a href="student portal.html">Stock Level</a>
+        <a href="foodmenu.html">Food Menu</a>
+        <a href="boostrap.html">Home</a>
+    </div>
+
+    <script src="managerscripts.js"></script>
+</body>
+
+</html>
